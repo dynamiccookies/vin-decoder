@@ -16,10 +16,12 @@
      * success or an array of error messages on failure.
      *
      * @access public
+	 * @link https://github.com/dynamiccookies/vin-decoder vin-decoder.php
      * @link https://vpic.nhtsa.dot.gov/api/ NHTSA API
      * @author Chad A Davis <github.com/dynamiccookies>
      * @license http://www.opensource.org/licenses/mit-license.html MIT License
      * @copyright 2021 @author
+	 * @version 0.1.1 - Please remember to check for the latest version
      * @param string          $vin             Vehicle Identification Number
      * @param string|array ...$keys (optional) Multiple strings or array of keys
      *                                         to return from the NHTSA array
