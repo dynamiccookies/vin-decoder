@@ -21,7 +21,7 @@
      * @author Chad A Davis <github.com/dynamiccookies>
      * @license http://www.opensource.org/licenses/mit-license.html MIT License
      * @copyright 2021 @author
-	 * @version 0.1.1 - Please remember to check for the latest version
+	 * @version 0.1.2 - Please remember to check for the latest version
      * @param string          $vin             Vehicle Identification Number
      * @param string|array ...$keys (optional) Multiple strings or array of keys
      *                                         to return from the NHTSA array
@@ -47,7 +47,7 @@
 			
 			if (!$results['ErrorCode'] == '0') {
 				$vehicle['Error']    = explode(';', $results['ErrorText']);
-				$vehicle['Searched'] = $search;
+				$vehicle['Searched'] = str_replace('VIN(s): ', '', $search);
 
 				return $vehicle;
 			} else {$vehicle['Error'] = 0;}
