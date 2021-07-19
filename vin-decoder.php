@@ -21,7 +21,7 @@
      * @author Chad A Davis <github.com/dynamiccookies>
      * @license http://www.opensource.org/licenses/mit-license.html MIT License
      * @copyright 2021 @author
-     * @version 0.1.4 - Please remember to check for the latest version
+     * @version 0.2.0 - Please remember to check for the latest version
      * @param string    $vin             Vehicle Identification Number
      * @param mixed  ...$keys (optional) Key(s) from the NHTSA array as one or 
      *                                   many strings, or an array of strings
