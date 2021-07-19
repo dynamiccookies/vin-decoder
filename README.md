@@ -39,7 +39,7 @@ For Example #1, the complete array from the NHTSA API is returned with more 130+
 
 For Examples #2 and #3, the following array is returned:
 ```
-Array ( [Error] => 0 [Make] => TOYOTA [Model] => Camry [ModelYear] => 1992 [Trim] => )
+Array ( [Error] => 0 [Make] => Toyota [Model] => Camry [ModelYear] => 1992 [Trim] => )
 ```
 
 In the event of an invalid VIN being submitted, an array with the keys `['Error']` and `[Searched]'` is returned. 
