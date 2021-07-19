@@ -21,10 +21,10 @@
      * @author Chad A Davis <github.com/dynamiccookies>
      * @license http://www.opensource.org/licenses/mit-license.html MIT License
      * @copyright 2021 @author
-	 * @version 0.1.2 - Please remember to check for the latest version
      * @param string          $vin             Vehicle Identification Number
      * @param string|array ...$keys (optional) Multiple strings or array of keys
      *                                         to return from the NHTSA array
+     * @version 0.1.3 - Please remember to check for the latest version
      * @return object Vehicle
      */
 
@@ -51,6 +51,8 @@
 
 				return $vehicle;
 			} else {$vehicle['Error'] = 0;}
+
+			$results['Make'] = ucwords(strtolower($results['Make']));
 
 			if (!$keys) {
 				$results['Error']   = 0;
