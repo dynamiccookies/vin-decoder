@@ -35,14 +35,14 @@ decodeVIN($vin, 'Make','Model','ModelYear','Trim');
 ```
 
 ## Return Values
-For Example #1, the complete array from the NHTSA API is returned with more 130+ attributes.
+For Example #1, the complete array from the NHTSA API is returned with 130+ attributes.
 
 For Examples #2 and #3, the following array is returned:
 ```
 Array ( [Error] => 0 [Make] => Toyota [Model] => Camry [ModelYear] => 1992 [Trim] => )
 ```
 
-In the event of an invalid VIN being submitted, an array with the keys `['Error']` and `[Searched]'` is returned. 
+In the event of an invalid VIN being submitted, an array with the keys `['Error']` and `['Searched']` is returned. 
  - The `['Error']` key holds an array of error messages.
  - The `['Searched']` key returns the value that was searched so that you may check it for errors. 
 
@@ -53,7 +53,7 @@ Array (
     [0] => 11 - Incorrect Model Year - Position 10 does not match valid model year codes (I, O, Q, U, Z, 0). Decoded data may not be accurate. 
     [1] => 400 - Invalid Characters Present 
   ) 
-  [Searched] => VIN(s): 4T1SK12E00U028452 
+  [Searched] => 4T1SK12E00U028452 
 )
 ```
 
